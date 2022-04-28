@@ -12,28 +12,23 @@ namespace TP::EX1 {
 		TREFLE
 	};
 	
-	template<typename T>
-	std::ostream &operator<<(typename std::enable_if<std::is_enum<T>::value, std::ostream>::type &stream, const T &e) {
-		return stream << static_cast<typename std::underlying_type<T>::type>(e);
-	}
-	
 	class Carte {
 	public:
-		Carte(TP::EX1::Couleur const &couleur, std::string const &valeur);
+		Carte(TP::EX1::Couleur const &couleur, std::string const &valeur) noexcept;
 		
-		Carte(TP::EX1::Carte const &carte);
+		Carte(TP::EX1::Carte const &carte) noexcept;
 		
 		~Carte();
 		
-		void setType(TP::EX1::Couleur const &couleur);
+		void setType(TP::EX1::Couleur const &couleur) noexcept;
 		
-		void setValeur(std::string const &valeur);
+		void setValeur(std::string const &valeur) noexcept;
 		
-		void afficher() const;
+		void afficher() const noexcept;
 		
-		bool equals(TP::EX1::Carte const &carte) const;
+		bool equals(TP::EX1::Carte const &carte) const noexcept;
 		
-		void affecter(TP::EX1::Carte const &carte);
+		void affecter(TP::EX1::Carte const &carte) noexcept;
 	
 	private:
 		TP::EX1::Couleur a_type;

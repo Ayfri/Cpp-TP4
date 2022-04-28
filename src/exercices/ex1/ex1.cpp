@@ -3,7 +3,7 @@
 
 void TP::EX1::ex1() {
 	std::cout << "Jeu de cartes." << '\n';
-	TP::EX1::Carte c1(TP::EX1::Couleur::PIQUE, "As");
+	const TP::EX1::Carte c1(TP::EX1::Couleur::PIQUE, "As");
 	c1.afficher();
 	
 	auto c2(c1);
@@ -20,7 +20,7 @@ void TP::EX1::ex1() {
 	if (c1.equals(c2)) {
 		std::cout << "Les cartes sont égales." << '\n';
 	} else {
-		std::cerr << "Problème bug, les cartes ne sont pas égales" << '\n';
+		std::cout << "Problème : Les cartes ne sont pas égales" << '\n';
 		c1.afficher();
 		c2.afficher();
 	}

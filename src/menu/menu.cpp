@@ -6,16 +6,16 @@ void TP::Menu::runExercice(const int &n) {
 			TP::EX1::ex1();
 			break;
 		case 2:
-//			Test_Fonction();
+			TP::EX2::ex2();
 			break;
 		default:
-			std::cout << "Choix invalide." << std::endl;
+			std::cout << "Choix invalide." << '\n';
 			break;
 	}
 }
 
 inline void TP::Menu::show_exercices_list() {
-	for (auto i = 1U; i < EXERCICES_NUMBER; ++i) std::cout << "Exercise " << i << "\n";
+	for (auto i = 1U; i < EXERCICES_NUMBER + 1U; ++i) std::cout << "Exercise " << i << "\n";
 }
 
 void TP::Menu::show_menu() {
@@ -29,7 +29,8 @@ void TP::Menu::show_menu() {
 		
 		if (Utils::tolower(input) == EXIT_TEXT) break;
 		
-		if (input.length() != 1U || input[0U] < '1' || input[0U] > '5') {
+		constexpr char max_input = '0' + static_cast<char>(EXERCICES_NUMBER);
+		if (input.length() != 1U || input[0U] < '1' || input[0U] > max_input) {
 			std::cout << "Numéro d'exercice invalide." << '\n';
 			continue;
 		}
