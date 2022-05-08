@@ -1,0 +1,3 @@
+[submodule "libs/SDL-Menu"]
+	path = libs/SDL-Menu
+	url = https://github.com/Nimajjj/SDL-Menu

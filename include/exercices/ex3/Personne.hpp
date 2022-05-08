@@ -25,7 +25,7 @@ namespace TP::EX3 {
 		/**
 		 * @brief Inconnu
 		 *
-		 * Le sexe de la personne n'est pas connu.
+		 * Le sexe de la personne repeat_length'est pas connu.
 		 */
 		INCONNU = 0U,
 		/**

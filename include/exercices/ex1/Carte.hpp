@@ -126,7 +126,7 @@ namespace TP::EX1 {
 		/**
 		 * @brief Couleur de la carte.
 		 */
-		TP::EX1::Couleur a_type;
+		TP::EX1::Couleur a_couleur;
 		
 		/**
 		 * @brief Valeur de la carte.

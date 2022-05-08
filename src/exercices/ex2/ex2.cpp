@@ -17,4 +17,5 @@ void TP::EX2::ex2() {
 	} else {
 		std::cout << "Problème : Les cartes ne sont pas égales." << '\n';
 	}
+	std::cout << "Affichage de GetNbCreation() : " << TP::EX2::Carte::GetNbCreation() << '\n';
 }

@@ -7,7 +7,7 @@ void TP::EX3::Personne::initialiser(const std::string &nom, const long unsigned 
 }
 
 void TP::EX3::Personne::afficher() const {
-	std::cout << "Affichage d'une perosnne :" << '\n';
+	std::cout << "Affichage d'une personne :" << '\n';
 	std::cout << "\tNom : " << this->a_nom << '\n';
 	std::cout << "\tNumero : " << this->a_numero << '\n';
 	std::cout << "\tSexe : " << this->a_sexe << '\n';

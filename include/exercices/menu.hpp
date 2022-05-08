@@ -14,6 +14,20 @@ namespace TP {
 	static constexpr auto EXERCICES_NUMBER = 3U;
 	
 	/**
+	 * @brief Texte oui.
+	 *
+	 * Texte utilisé pour la confirmation dans un menu de console.
+	 */
+	static constexpr auto YES = "o";
+	
+	/**
+	 * @brief Texte non.
+	 *
+	 * Texte utilisé pour le refus dans un menu de console.
+	 */
+	static constexpr auto NO = "n";
+	
+	/**
 	 * @brief Texte pour quitter.
 	 * Texte permettant de quitter le menu de choix d'exercices.
 	 */
@@ -33,6 +47,21 @@ namespace TP {
 			 */
 		static void show_menu();
 		
+		/**
+		 * @brief Affiche le menu graphique.
+		 *
+		 * Affiche le menu graphique, utilisant SDL2.
+		 * L'interface contient des boutons pour lancer les exercices.
+		 */
+		static void show_graphical_menu();
+		
+		/**
+		 * @brief Menu utiliser interface graphique.
+		 * @return true Si l'interface graphique doit être utilisée.
+		 *
+		 * Cette fonction ouvre un menu pour choisir d'utiliser l'interface graphique ou non.
+		 */
+		static bool menu_choose_use_graphical_interface();
 	private:
 		/**
 		 * Prend un entier en entrée et exécute l'exercice correspondant.
