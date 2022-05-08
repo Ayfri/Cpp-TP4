@@ -5,7 +5,7 @@
 #include "Carte.hpp"
 
 namespace TP::EX1 {
-	enum class Couleur {
+	enum class Couleur : unsigned char {
 		PIQUE,
 		COEUR,
 		CARREAU,
