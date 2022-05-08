@@ -8,6 +8,11 @@ void TP::Menu::runExercice(const int &n) {
 		case 2:
 			TP::EX2::ex2();
 			break;
+			
+		case 3:
+			TP::EX3::ex3();
+			break;
+			
 		default:
 			std::cout << "Choix invalide." << '\n';
 			break;
@@ -22,14 +27,14 @@ void TP::Menu::show_menu() {
 	show_exercices_list();
 	
 	do {
-		std::cout << "Veuillez choisir un exercice à lancer : ";
+		std::cout << "Veuillez choisir un exercice à lancer ('" << TP::EXIT_TEXT << "' pour quitter) : ";
 		
 		std::string input;
 		std::cin >> input;
 		
-		if (Utils::tolower(input) == EXIT_TEXT) break;
+		if (Utils::tolower(input) == TP::EXIT_TEXT) break;
 		
-		constexpr char max_input = '0' + static_cast<char>(EXERCICES_NUMBER);
+		constexpr char max_input = '0' + static_cast<char>(TP::EXERCICES_NUMBER);
 		if (input.length() != 1U || input[0U] < '1' || input[0U] > max_input) {
 			std::cout << "Numéro d'exercice invalide." << '\n';
 			continue;

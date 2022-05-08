@@ -4,12 +4,13 @@
 #include <iostream>
 #include "exercices/ex1/ex1.hpp"
 #include "exercices/ex2/ex2.hpp"
+#include "exercices/ex3/ex3.hpp"
 #include "utils/utils.hpp"
 
-static constexpr auto EXERCICES_NUMBER = 2U;
-static constexpr auto EXIT_TEXT = "exit";
-
 namespace TP {
+	static constexpr auto EXERCICES_NUMBER = 3U;
+	static constexpr auto EXIT_TEXT = "exit";
+	
 	class Menu {
 	public:
 		/**

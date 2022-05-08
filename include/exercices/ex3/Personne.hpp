@@ -10,15 +10,17 @@ namespace TP::EX3 {
 		FEMININ = 2U
 	};
 	
+	std::ostream& operator<<(std::ostream& os, const Sexe& sexe);
+	
 	class Personne {
 	public:
-		Personne() noexcept = default;
+		Personne();
 		
-		~Personne() = default;
+		~Personne();
 		
-		const void initialiser(const std::string &nom, const long unsigned &numero, const Sexe &sexe) noexcept;
+		void initialiser(const std::string &nom, const long unsigned &numero, const Sexe &sexe) noexcept;
 		
-		const void afficher() const;
+		void afficher() const;
 		
 		const std::string &getNom() const noexcept;
 		
