@@ -5,8 +5,9 @@
 #endif
 
 int main() {
-#ifdef _WIN32
+
 	// fixe les accents dans les consoles sous windows
+#ifdef _WIN32
 	SetConsoleOutputCP(65001U);
 #endif
 	

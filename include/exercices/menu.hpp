@@ -8,9 +8,23 @@
 #include "utils/utils.hpp"
 
 namespace TP {
+	/**
+	 * @brief Nombre d'exercices.
+	 */
 	static constexpr auto EXERCICES_NUMBER = 3U;
+	
+	/**
+	 * @brief Texte pour quitter.
+	 * Texte permettant de quitter le menu de choix d'exercices.
+	 */
 	static constexpr auto EXIT_TEXT = "exit";
 	
+	/**
+	 * @class Menu
+	 * @brief Classe représentant le menu d'exercices.
+	 *
+	 * Cette classe permet de gérer le menu d'exercices, d'en afficher la liste et de choisir un exercice à lancer.
+	 */
 	class Menu {
 	public:
 		/**
